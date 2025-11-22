@@ -18,32 +18,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* Napraviti klasu PokemonArena koja nasleđuje Application klasu biblioteke javafx i izgleda kao na slici 1. Obezbediti
-    da je unapred selektovano prvo radio dugme (gledano odozgo) i da u svakom trenutku može biti selektovano tačno
-    jedno radio dugme.
-    Na klik dugmeta Ucitaj iz datoteke pokemoni.txt učitavaju se pokemoni i smeštaju u List<Pokemon>. Potom se lista
-    sortira tako da prvo u listi idu pokemoni koji pripadaju igraču (u datoteci počinju sa p), a potom računaru (u datoteci
-    počinju sa n) - na primer može se koristiti operator instanceof. Ukoliko igrač (ili računar) poseduju više pokemona,
-    potrebno ih je sortirati po atributu nivo nerastuće. Nakon sortiranja u gornji TextArea element se ispisuju pokemoni
-    u sortiranoj listi, svaki u novom redu (koristeći toString) nad klasom Pokemon (pogledati sliku 2). Nakon ispisa,
-    igraču se postavlja njegov najjači pokemon (prvi element sortiranje liste), a računaru njegov najjači pokemon (prvi
-    računarski pokemon nakon poslednjeg igračevog). Sadržaj radio dugmati postaviti na vrednosti toString metoda za
-    magije igračevih pokemona (pogledati radio dugmad na slici 2).
-    Na klik dugmeta Izaberi magiju, igračevom pokemonu se postavlja prva ili druga magija u zavisnosti od toga šta
-    je odabrao korisnik (koristiti metod setIzabranaMagija(int i)). Nakon toga, u donji TextArea potrebno je dodati
-    tekst koji obaveštava korisnika programa da je igrač izabrao magiju, na primer:
-        [igrac] Bira magiju vodeni mlaz 20
-    Na klik dugmeta Simuliraj dešava se simulacija jedne runde borbe pokemona (slika 2). Prvo se proverava da li nečiji
-    pokemon ima ≤ 0 života. Ako je to slučaj, za pobednika se proglašava drugi pobednik porukom Pobedio je racunar
-    ili Pobedio je igrac.
-    Ako pokemoni imaju više od 0 života, prvo igra igračev pokemon i ispaljuje odabranu magiju - koristiti metod
-    baciMagiju, a nakon toga igra računar i ispaljuje svoju magiju - koristiti takođe metod baciMagiju. Nakon odi-
-    grane jedne runde poteza, potrebno je u donji TextArea elemet prijaviti šta se desilo i to:
-        • Koju magiju je bacio igrač
-        • Koju magiju je bacio računar
-        • Koliko života sada ima igrač
-        • Koliko života sada ima računar
-    Dozvoljeno je proširiti klase dodatnim atributima i metodama kako biste realizovali prethodno navedene zahteve. */
 public class PokemonArena extends Application {
     public static void main(String[] args) {
         launch(args);
