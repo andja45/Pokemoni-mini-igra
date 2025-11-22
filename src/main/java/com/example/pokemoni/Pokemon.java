@@ -1,18 +1,5 @@
 package com.example.pokemoni;
-/*  Napraviti apstraktnu klasu Pokemon koja predstavlja Pokemona. Klasa se karakteriše sledećim atributima:
-        • String ime - ime Pokemona
-        • int nivo - nivo Pokemona (broj koji najmanje može biti 1)
-        • Magija magija1 - prva magija koju poseduje Pokemon
-        • Magija magija2 - druga magija koju poseduje Pokemon
-        • int zivot - procenat života Pokemona (na početku 100)
-    Implementirati konstruktor koji prihvata ime, nivo, magija1, magija2, a zivot postavlja na 100. Implementirati
-    potrebne get metode. Implementirati metod void nanesiStetu(int kolikoStete) koji umanjuje zivot za vrednost
-    kolikoStete. Klasa poseduje apstraktan metod public abstract void baciMagiju(Pokemon neprijatelj).
-    Implementirati toString tako da pokemone ispisuje na sledeći način:
-        [nivo] ime
-        [lvl3] Pikachu
-        [lvl4] Bulbasaur
-        [lvl9] MewTwo */
+
 public abstract class Pokemon implements Comparable<Pokemon> {
     private String ime;
     private int nivo;
