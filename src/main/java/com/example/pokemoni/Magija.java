@@ -1,8 +1,5 @@
 package com.example.pokemoni;
-/*  Napraviti klasu Magija koju karakterišu atributi snaga (int) i ime (String). Implementirati get metode za navedene
-    atribute, konstruktor koji prihvata vrednosti za oba atributa i konstruktor kopije. Implementirati toString metod da
-    ispisuje magiju u obliku:
-        ime snaga */
+
 public class Magija {
     private int snaga;
     private String ime;
